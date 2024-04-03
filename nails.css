@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&display=swap');
+
+:root{
+    --dark-pink: rgb(245, 78, 106);
+}
+
+
+.html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 15px 10px 0 10px;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+.logo h1{
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-links li a{
+    color: black;
+    text-decoration: none;
+    margin: 15px;font-size: 20px;
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 900;
+    font-style: normal;
+    transition: all .50s;
+}
+
+.nav-links li a:hover{
+    color: var(--dark-pink)
+}
+
+@media(max-width: 993px){
+    .nav-links{
+        display: none;
+    }
+
+    .appointment-btn{
+        display: none;
+    }
+}
+
+.appointment-btn button{
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    cursor: pointer;
+    border: solid 1px pink;
+    transition: all .50s;
+}
+
+.appointment-btn button:hover{
+    background-color: var(--dark-pink);
+    color: white;
+}
+
+.menu-bar{
+    cursor: pointer;
+}
+
+.bar{
+    width: 35px;
+    height: 4px;
+    background-color: black;
+    margin: 4px;
+    transition: all .50s;
+}
+
+
+ /* Rotate first bar */
+ .change .bar1 {
+    transform: translate(0, 8px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2{
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -8px) rotate(45deg);
+  }
+
+
+.blank{
+    width: 100%;
+    height: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all .50s;
+}
+
+.blankClasslist{
+    height: 300px !important;
+}
+
+.blankClasslist-link{
+    display: block !important;
+
+}
+
+.blank li{
+    list-style: none;
+    width: 100%;
+}
+
+.blank li a{
+    text-decoration: none;
+    font-size: 30px;
+    display: none;
+    transition: all .50s;
+
+}
+
+
+/***home section***/
+
+#home{
+    width: 100%;
+    height: 89%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(images/nails-gif.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.home-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.home-wrapper h1{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 45px;
+    text-align: center;
+}
+.book-btn{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    opacity: 0;
+    animation: appear .50s;
+    -moz-animation: appear .50s;
+    -o-animation: appear .50s;
+    -webkit-animation: appear .50s;
+    animation-delay: 2.70s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.book-btn button{
+    width: 160px;
+    height: 45px;
+    background-color: white;
+    transition: all .50s;
+    cursor: pointer;
+    border: none;
+}
+
+.book-btn button:hover{
+    background-color: var(--dark-pink);
+    color: white;
+}
+
+/***animations for book btn***/
+
+@keyframes appear{
+    0%{opacity: 0;
+    transform: translateX(-50px);
+    }
+    50%{opacity: .50;
+        transform: translateX(20px);
+    }
+    100%{opacity: 1;}
+}
+
+@-moz-keyframes appear{
+    0%{opacity: 0;
+        transform: translateX(-50px);
+        }
+        50%{opacity: .50;
+            transform: translateX(20px);
+        }
+        100%{opacity: 1;
+        transform: translateX(50px);
+    }
+}
+
+@-o-keyframes appear{
+    0%{opacity: 0;
+        transform: translateX(-50px);
+        }
+        50%{opacity: .50;
+            transform: translateX(20px);
+        }
+        100%{opacity: 1;
+        transform: translateX(50px);
+    }
+}
+
+@-webkit-keyframes appear{
+    0%{opacity: 0;
+        transform: translateX(-50px);
+        }
+        50%{opacity: .50;
+            transform: translateX(20px);
+        }
+        100%{opacity: 1;
+        transform: translateX(50px);
+    }
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+
+
+/****about section****/
+
+#about{
+    height: 100%;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+.about-header{
+    padding: 0 20px 0 20px;
+}
+
+
+@media(max-width:714px){
+    
+#about{
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    height: fit-content;
+}
+
+@media(max-width:280px) {
+    #about{  /***querry to change grid tp 1 by 1 in smaller devices****/
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid-pictures{
+        display: none;
+        /***remove grid pictures from fold devices so content can fit screen****/
+    }
+}
+
+
+
+}
+
+.know-more-btn button{
+    width: 150px;
+    height: 45px;
+    background-color: pink;
+    border: none;
+    transition: all .50s;
+    cursor: pointer;
+}
+
+.know-more-btn button:hover{
+    background-color: var(--dark-pink);
+    color: white;
+}
+
+
+
+.about-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title p{
+    color: var(--dark-pink);
+}
+
+.about-grid-pictures{
+    padding-top: 5px;
+}
+
+
+
+.about-grid-pictures li{
+    list-style: none;
+    display: inline-block;
+}
+
+.about-img{
+    width: 100px;
+    height: 400px;
+    border: solid black;
+    cursor: pointer;
+    transition: all .50s !important;
+}
+
+
+.about-img:hover{
+    border: solid white;
+    width: 90px;
+    height: 350px;
+}
+.grid-img-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+
+.about1{
+    background-image: url(images/img4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.about2{
+    background-image: url(images/img1.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about3{
+    background-image: url(images/img5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-under-title{
+    text-align: center;
+    display: inline-block;
+}
+
+
+
+.custom-shape-divider-bottom-1711639235 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+
+
+/***service page main****/
+.service-page-title-wrapper>div{
+    display: flex;
+    justify-content: center;
+}
+
+.service-page-title{
+    text-align: center;
+    color: var(--dark-pink);
+}
+
+
+.service-page-sub{
+    text-align: center;
+}
+
+
+
+.service-page-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+    padding: 0 20px 0 20px;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+
+
+.service-grid-card{
+    width: 280px;
+    height: 200px;
+    border: solid 1px gray;
+    background-color: white;
+    transition: all .50s;
+    cursor: pointer;
+}
+
+.service-grid-card:hover{
+    box-shadow: 3px 3px 7px 5px grey;
+    transform: scale(1.3);
+}
+
+
+.service-card1{
+    background-image: url(images/slide1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.service-card2{
+    background-image: url(images/slide2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.service-card3{
+    background-image: url(images/slide3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.service-card4{
+    background-image: url(images/slide4.edit.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.brochure{
+    display: flex;
+    justify-content: center;
+}
+
+.brochure a{
+    font-size: 30px;
+}
+
+
+/***SERVICES AND PRICES***/
+#services{
+    background-image: url(images/black-pink-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: fit-content;
+    padding-top: 20px;
+    position: relative;
+}
+
+
+
+.service-listings hr{
+    width: 50%;
+}
+
+
+
+.service-listings{
+    line-height: 2;
+}
+
+#services h1{
+    color: var(--pink);
+    text-shadow: 
+    0 0 1px black,
+    0 0 1px black,
+    0 0 1px black,
+    0 0 1px black,
+    0 0 1px black,
+    0 0 1px black,
+    0 0 1px black,
+    0 0 1px black,
+    0 0 1px black,
+    5px 5px rgb(252, 68, 99);
+}
+.service-title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.treatments{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.extra{
+    display: flex;
+    justify-content: center;
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+.schedule-btn{
+    width: 200px;
+    height: 45px;
+    cursor: pointer;
+    background: linear-gradient(to left, pink 50%, rgb(249, 119, 141) 50%)right;
+    background-size: 200% 100%;
+    transition: all .60s;
+    border:none;
+}
+
+.schedule-btn:hover{
+    background-position: left;
+    font-weight: 600;
+    color: white;
+}
+
+
+.bord{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/****shop hours****/
+
+#shop-wrapper{
+  width: 100%;
+  overflow-x: scroll;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 15px;  
+  padding-left: 15px;
+}
+
+#shop-section{
+    position: relative;
+    top: 50px;
+}
+
+
+.shop-title{
+    display: flex;
+    justify-content: center;
+}
+.shop-item{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 3px 3px 5px 3px grey;
+    position: relative;
+    cursor: pointer;
+    background-color: antiquewhite;
+    transition: all .50s;
+}
+
+.shop-item:hover{
+    opacity: .50;
+}
+
+
+
+.item-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    align-items: center;
+}
+
+.item-wrapper img{
+    width: 60px;
+    position: absolute;
+    mix-blend-mode: multiply;
+}
+
+.item-wrapper a{
+    position: relative;
+    font-weight: 900;
+}
+
+
+/*****contact-section****/
+
+#contact{
+    width: 100%;
+    position: relative;
+    top: 60px;
+    background-color: rgb(234, 224, 224);
+}
+
+#contact>div{
+    display: flex;
+    justify-content: center;
+}
+
+#form>div{
+    display: flex;
+    justify-content: center;
+    margin: 16px;
+}
+
+#form input{
+    width: 278px;
+    height: 40px;
+}
+
+#form input:focus{
+    outline: solid pink;
+}
+
+#form textarea{
+    width: 70%;
+}
+
+#form textarea:focus{
+    outline: solid pink 2px;
+}
+
+
+#form button{
+    width: 240px;
+    height: 40px;
+    background-color: white;
+    cursor: pointer;
+    transition: all .50s;
+    border: solid pink 1px;
+}
+
+
+#form button:hover{
+    background-color: var(--dark-pink);
+}
+
+
+
+/***copyright sectionn****/
+
+#copyright{
+    width: 100%;
+    background-color: black;
+    margin-top: 60px;
+    position: relative;
+    top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.brand h1{
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.copyright-wrapper{
+    width: 100%;
+    color:  white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.copyright-stamp{
+    margin: 10px;
+}
