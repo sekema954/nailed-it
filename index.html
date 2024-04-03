@@ -41,8 +41,8 @@
             <div class="mobile-menu">
                 <li><a class="mobile-link" href="#home">Home</a></li>
                 <li><a class="mobile-link" href="#about">About Us</a></li>
-                <li><a class="mobile-link" href="#services">Services</a></li> <!-----navbar navigation links-->
-                <li><a class="mobile-link" href="#shop">Shop</a></li>
+                <li><a class="mobile-link" href="#service-page">Services</a></li> <!-----navbar navigation links-->
+                <li><a class="mobile-link" href="#shop-section">Shop</a></li>
                 <li><a class="mobile-link" href="#contact">Call Us</a></li>
                 <!----dropdown menu-->
             </div>
@@ -88,7 +88,7 @@
                         <h2 data-aos="fade-in">My Beauty Studio</h2>
                     </div>
                     <div class="about-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus deleniti quidem dicta. Nisi, provident illum veritatis molestiae assumenda dignissimos deleniti praesentium laborum excepturi suscipit reiciendis, voluptatibus eius blanditiis asperiores voluptate.lor</p>
+                        <p>2005 – Our Nail Bar opened its doors, with a team of talented, passionate, caring, creative people dedicated to doing great nails and giving our clients amazing experiences. We are always looking for the best, most natural products we can find. When you walk into our doors, you will be greeted with a smile and taken care of by everyone on our team. Every moment of your visit should be enjoyable and relaxed.</p>
                     </div>
                     <div class="know-more-btn">
                         <a href="">
@@ -123,7 +123,14 @@
         <!---shop section-->
         <section id="shop-section">
             <div class="shop-title">
-                <h2>Shop at our online store</h2>
+                <a href="">
+                    <h2>Shop at our online store</h2>
+                </a>
+                <div class="shop-arrow">
+                    <a href="#">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
             <div id="shop-wrapper">
                 <div class="shop-item">
@@ -156,6 +163,23 @@
             </div>
         </section><!---shop section end-->
 
+        <section id="review"><!--review -section -->
+            <div class="review-wrapper">
+                <div class="review-title">
+                    <h1>What the customers think.</h1>
+                </div>
+                <div class="review-content">
+                    <p class="review1 review">"As always my nails are amazing. You are such great proffesionals. I don't know how I ever got by before you came in to my life! You girls are the best!."<br>Marry </p>
+                    <p class="review2 review" style="display:none;">"You are fantastic at what you do, and I recommend you already to all my friends. I will continue to spread the word about how I love your manicure." ❤️❤️❤️<br>Brianana</p>
+                    <p class="review3 review" style="display:none;">"I love coming to you. After a tough day at work, it's great to come into a relaxing environment and recieve a warm welcome from the team."<br>Maria</p>
+                </div>
+                <div class="nxt-btn">
+                    <i class="fa fa-caret-left" aria-hidden="true" onclick="showPrevReview()"></i>
+                    <i class="fa fa-caret-right" aria-hidden="true" onclick="showNextReview()"></i>
+                </div>
+            </div>
+        </section><!---section end-->
+
         <section id="contact" data-aos="fade-in">
             <div class="form-title">
                 <h2>Send us a message</h2>
@@ -184,9 +208,6 @@
 
         <section id="copyright">
             <div class="copyright-wrapper">
-            <div class="brand">
-                <h1>Nailed it</h1>
-            </div>
             <div class="copyright-stamp">
                 <p>Copyright 2024 Samuel Ekema. All rights reserved.</p>
             </div>
