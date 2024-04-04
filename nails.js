@@ -83,15 +83,12 @@ setInterval(() => {
 
 //make shop link visible when you hover over wrapper
 
-const shopLink = document.querySelectorAll(".shop-link");
 const shopWrapper = document.querySelectorAll(".shop-item");
 
-shopLink.forEach(link => {
-    link.style.display = "none";
-})
-
 shopWrapper.forEach(wrapper => {
-    wrapper.addEventListener("mouseover", ()=>{
-        
+    wrapper.addEventListener("mouseover", ()=> {
+        const shopLinks = document.querySelectorAll(".shop-link");
+        shopLinks.forEach(link => {
+            link.classList.toggle("showLink");        })
     })
 })
