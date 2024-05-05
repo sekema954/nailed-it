@@ -5,216 +5,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hiram Nails</title>
     <link rel="stylesheet" href="nails.css"><!---css link-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
-        crossorigin="anonymous"><!---bootstrap link-->
+    <link rel="icon" href="images/item8.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous"><!---bootstrap link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!---awesome font cdn-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!---AOS animation CSS library-->
 
 </head>
 <body>
-    <div id="container">
-        <!---blank canvas-->
-        <nav id="navbar">
-            <div class="logo">
-                <h1>Nailed it</h1>
+    <div class="top-header">
+        <div class="header-wrapper">
+            <div class="left-side-header">
+                <p>Free Call:<span><a href="tel:123-456-7890">(123)-456-7890</a></span></p>
             </div>
-            <div class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li> <!-----navbar navigation links-->
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#contact">Call Us</a></li>
+            <div class="center-side-header">
+                <p>Opening Hours: Mn-Fr: 10 am-8 pm</p>
             </div>
-            <div class="appointment-btn">
-                <a href="#">
-                    <button>Appointment</button><!---appointment page btn-->
+            <div class="right-side-header">
+                <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
-            </div>
-            <div class="menu-bar"><!----responsive menubar-->
-                <div class="bar1 bar"></div>
-                <div class="bar2 bar"></div>
-                <div class="bar3 bar"></div>
-            </div>
-        </nav>
-
-        <div class="blank">
-            <div class="mobile-menu">
-                <li><a class="mobile-link" href="#home">Home</a></li>
-                <li><a class="mobile-link" href="#about">About Us</a></li>
-                <li><a class="mobile-link" href="#service-page">Services</a></li> <!-----navbar navigation links-->
-                <li><a class="mobile-link" href="#shop-section">Shop</a></li>
-                <li><a class="mobile-link" href="#contact">Call Us</a></li>
-                <!----dropdown menu-->
+                <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
-        
+    </div>
+    <!---navbar-->
 
-        <!---main home section/front page-->
-        <section id="home">
-            <div class="home-wrapper" data-aos="flip-up">
-                <div class="heading">
-                    <h1 class="home-text">There's no better feeling than getting your nails done.</h1>
-                    <div class="book-btn">
-                        <a href="#">
-                            <button>Book with us</button>
-                        </a>
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <!---left nav-->
+            <div class="left-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+            </div>
+            <!---center-nav-->
+            <div class="center-nav">
+                <h1><span>Nail</span>ed It</h1>
+                <div class="menu-bar-wrapper">
+                    <div class="menu-bar">
+                        <div class="bar1 bar"></div>
+                        <div class="bar2 bar"></div>
+                        <div class="bar3 bar"></div>
                     </div>
                 </div>
             </div>
-            <div class="custom-shape-divider-bottom-1711639235">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-                </svg>
+
+            <!----right-nav-->
+            <div class="right-nav">
+                <li><a href="">Blog</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Contacts</a></li>
             </div>
-          
-        </section>
+        </div>
+    </nav>
+    <div class="dropdown-container">
+        <div id="dropdown-menu">
+            <div class="dropdown-wrapper">
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="">About</a></li>
+                <li><a class="nav-link" class="nav-link" href="">Services</a></li>
+                <li><a class="nav-link" href="">Gallert</a></li>
+                <li><a class="nav-link"href="">Pages</a></li>
+                <li><a class="nav-link" href="">Contacts</a></li>
+            </div>
+        </div>
+    </div>
 
 
-        <!----about section-->
-        <section id="about" data-aos="fade-in">
-            <div class="about-grid-pictures">
-                <div class="grid-img-wrapper">
-                    <li data-aos="flip-up"><div class="about-img about1"></div></li>
-                    <li><div class="about-img about2" data-aos="flip-down"></div></li>
-                    <li><div class="about-img about3" data-aos="flip-up"></div></li>
-                </div>
-            </div>
-            <div class="about-wrapper">
-                <div class="about-header">
-                    <div class="about-title">
-                        <p>Welcome To</p>
+
+
+
+
+    <!---home-slider-carousel--->
+    <section id="home" class="slider-container">
+        <div class="slider-wrapper">
+            <!--slide1-->
+            <div class="slide1 slider active-slide">
+                <div class="context-wrapper">
+                    <div class="slide-title">
+                        <h2>Make yourself unique with out custom nail design.</h2>
                     </div>
-                    <div class="about-under-title">
-                        <h2 data-aos="fade-in">My Beauty Studio</h2>
+                    <div class="hori-line">
+                        <hr>
                     </div>
-                    <div class="about-content">
-                        <p>2005 – Our Nail Bar opened its doors, with a team of talented, passionate, caring, creative people dedicated to doing great nails and giving our clients amazing experiences. We are always looking for the best, most natural products we can find. When you walk into our doors, you will be greeted with a smile and taken care of by everyone on our team. Every moment of your visit should be enjoyable and relaxed.</p>
+                    <div class="more-context">
+                        <p>Our qualified team provides a full range of nail design services to satisfy even the most demanding clients.</p>
                     </div>
-                    <div class="know-more-btn">
+                    <div class="read-more-btn">
                         <a href="">
-                            <button>Know more</button>
+                            <button>Read more</button>
                         </a>
                     </div>
-                </div>
-            </div>
-        </section><!---about section-->
-
-        <section id="service-page">
-            <div class="service-page-title-wrapper">
-                <div class="service-page-title">
-                    <h1>Services for Every Occasion</h1>
-                </div>
-                <div class="service-page-sub">
-                    <p>Explore the variety of services we offer at our nail shop.</p>
-                </div>
-            </div>
-            <div class="service-page-grid">
-                <div class="service-grid-card service-card1"></div>
-                <div class="service-grid-card service-card2"></div>
-                <div class="service-grid-card service-card3"></div>
-                <div class="service-grid-card service-card4"></div>
-            </div>
-            <div class="brochure">
-                <a href="services.html" target="_blank">See Brochure</a>
-            </div>
-        </section>
-
-
-        <!---shop section-->
-        <section id="shop-section">
-            <div class="shop-title">
-                <a href="shop.html">
-                    <h2>Shop at our online store</h2>
-                </a>
-                <div class="shop-arrow">
-                    <a href="shop.html">
-                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-            <div id="shop-wrapper">
-                <div class="shop-item">
-                    <div class="item-wrapper">
-                        <img src="images/item1.jpg" alt="">
-                        <a href='#' class="shop-link">Nail Cuticle 5.00$</a>
-                    </div>
-                </div>
-    
-                <div class="shop-item">
-                    <div class="item-wrapper">
-                        <img src="images/item2.jpg" alt="">
-                        <a href='#' class="shop-link">Nail Cuticle 5.00$</a>
-                    </div>
-                </div>
-    
-                <div class="shop-item">
-                    <div class="item-wrapper">
-                        <img src="images/item3.jpg" alt="">
-                        <a href='#' class="shop-link">Nail Cuticle 5.00$</a>
-                    </div>
-                </div>
-    
-                <div class="shop-item">
-                    <div class="item-wrapper">
-                        <img src="images/item4.jpg" alt="">
-                        <a href='#' class="shop-link">Nail Cuticle 5.00$</a>
+                    <div class="radio-btns">
+                        <input type="radio" name="" class="radio1 active-btn">
+                        <input type="radio" name="" class="radio2">
+                        <input type="radio" name="" class="radio3">
                     </div>
                 </div>
             </div>
-        </section><!---shop section end-->
-
-        <section id="review"><!--review -section -->
-            <div class="review-wrapper">
-                <div class="review-title">
-                    <h1>What the customers think.</h1>
-                </div>
-                <div class="review-content">
-                    <p class="review1 review">"As always my nails are amazing. You are such great proffesionals. I don't know how I ever got by before you came in to my life! You girls are the best!."<br>Marry </p>
-                    <p class="review2 review" style="display:none;">"You are fantastic at what you do, and I recommend you already to all my friends. I will continue to spread the word about how I love your manicure." ❤️❤️❤️<br>Brianana</p>
-                    <p class="review3 review" style="display:none;">"I love coming to you. After a tough day at work, it's great to come into a relaxing environment and recieve a warm welcome from the team."<br>Maria</p>
-                </div>
-                <div class="nxt-btn">
-                    <i class="fa fa-caret-left" aria-hidden="true" onclick="showPrevReview()"></i>
-                    <i class="fa fa-caret-right" aria-hidden="true" onclick="showNextReview()"></i>
+            <!----slide2-->
+            <div class="slide2 slider">
+                <div class="context-wrapper">
+                    <div class="slide-title">
+                        <h2>Make yourself unique with out custom nail design.</h2>
+                    </div>
+                    <div class="hori-line">
+                        <hr>
+                    </div>
+                    <div class="more-context">
+                        <p>Our qualified team provides a full range of nail design services to satisfy even the most demanding clients.</p>
+                    </div>
+                    <div class="read-more-btn">
+                        <a href="">
+                            <button>Read more</button>
+                        </a>
+                    </div>
+                   
                 </div>
             </div>
-        </section><!---section end-->
-
-        <section id="contact" data-aos="fade-in">
-            <div class="form-title">
-                <h2>Send us a message</h2>
+            <!----slide3-->
+            <div class="slide3 slider">
+                <div class="context-wrapper">
+                    <div class="slide-title">
+                        <h2>Make yourself unique with out custom nail design.</h2>
+                    </div>
+                    <div class="hori-line">
+                        <hr>
+                    </div>
+                    <div class="more-context">
+                        <p>Our qualified team provides a full range of nail design services to satisfy even the most demanding clients.</p>
+                    </div>
+                    <div class="read-more-btn">
+                        <a href="">
+                            <button>Read more</button>
+                        </a>
+                    </div>
+                   
+                </div>
             </div>
-            <form action="" id="form" method="POST">
-                <div class="name-div">
-                    <input type="text" name="name" id="" placeholder="Enter Name" required>
-                </div>
-                <div class="email-div">
-                    <input type="email" name="email" id="" placeholder="Enter Email" required>
-                </div>
-                <div class="subject">
-                    <input type="text" placeholder="subject" required>
-                </div>
-                <div class="message">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
-                </div>
-                <div class="submit-btn">
-                    <button type="submit">Send</button>
-                </div>
-                
-            </form><!---form end-->
-        
-        </section><!---contact section end-->
+        </div>
+    </section->
 
-
-        <section id="copyright">
-            <div class="copyright-wrapper">
-            <div class="copyright-stamp">
-                <p>Copyright &copy; 2024 Samuel Ekema. All rights reserved.</p>
+    <section class="section-1">
+        <div class="grid-wrapper">
+            <div class="section-1-grid">
+                <div class="section-1-img">
+                    <img src="images/slide4.edit.jpg" alt="">
+                </div>
+                <div class="section-1-context">
+                    <div class="section-1-context-wrapper">
+                        <div class="section-1-title">
+                            <h1>Why our clients choose us.</h1>
+                        </div>
+                        <div class="context-1">
+                            <p>At [Your Nail Shop Name], we take pride in being the go-to destination for nail care and design services. Wondering why our clients choose us? Here's what sets us apart:</p>
+                        </div>
+                        <div class="context-1">
+                            <p>Quality is at the heart of everything we do. From the moment you step into our salon, you'll experience top-notch service delivered by our skilled and dedicated team. We use only the best products and techniques to ensure that every client leaves with nails they love.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-             </div>
-        </section>
-            
-    </div><!---container end-->
+        </div>
+    </section>
     
 
 

@@ -1,94 +1,75 @@
-//animate auto type text
-const div = document.querySelector(".home-text");
-const text = "There's no better feeling than getting your nails done.";
+//menubar
 
-function typingEffect(element, text, i=0){
-    if(i===0) {
-        element.textContent = "";
-    }
-
-    element.textContent += text[i];
-
-    if(i===text.length -1) {
-        return;
-    }
-
-    setTimeout(() => typingEffect(element,text, i+1), 50);
-}
-typingEffect(div, text);
-
-
-//menu-bar function
-
-const menuBar = document.querySelector(".menu-bar");
-menuBar.addEventListener("click", () =>{
-    const mobileMenu = document.querySelector(".blank");
-    menuBar.classList.toggle("change");
-    mobileMenu.classList.toggle("blankClasslist");
-    const mobileLink = document.querySelectorAll(".mobile-link");
-    mobileLink.forEach(link => {
-        link.classList.toggle("blankClasslist-link");
+const menuBtn = document.querySelector(".menu-bar");
+const dropdown = document.getElementById("dropdown-menu");
+const navLinks = document.querySelectorAll(".nav-link");
+menuBtn.addEventListener("click", ()=>{
+    menuBtn.classList.toggle("change");
+    dropdown.classList.toggle('change-height');
+    navLinks.forEach(link=>{
+        link.classList.toggle('change-display');
     })
-    
-})
+} )
 
 
-//review slide
+//navbar shadow on scrollY
 
-let currentReviewIndex = 1;
-const totalReviews = 3;
-
-function showNextReview() {
-    document.querySelector(`.review${currentReviewIndex}`).style.display = 'none';
-    currentReviewIndex = (currentReviewIndex % totalReviews) + 1;
-    document.querySelector(`.review${currentReviewIndex}`).style.display = 'block';
-}
-
-function showPrevReview() {
-    document.querySelector(`.review${currentReviewIndex}`).style.display = 'none';
-    currentReviewIndex = (currentReviewIndex - 2 + totalReviews) % totalReviews + 1;
-    document.querySelector(`.review${currentReviewIndex}`).style.display = 'block';
-}
-
-
-
-
-
-//auto scroll
-
-const overflowGrid = document.querySelector(".service-page-grid");
-const scrollAmount = 300; // Adjust this value as needed
-const scrollInterval = 2000; // Adjust this value as needed
-
-let scrollPosition = 0;
-
-setInterval(() => {
-    // Check if scrolling to the right will exceed the maximum scroll width
-    if (scrollPosition + overflowGrid.clientWidth >= overflowGrid.scrollWidth) {
-        // If so, scroll back to the beginning
-        scrollPosition = 0;
+window.addEventListener("scroll", ()=>{
+    const navWrapper = document.querySelector(".nav-wrapper");
+    if(window.scrollY > 100) {
+        navWrapper.classList.add('navbar-shadow');
     } else {
-        // Otherwise, increment the scroll position
-        scrollPosition += scrollAmount;
+        navWrapper.classList.remove('navbar-shadow');
     }
 
-    // Smoothly scroll to the new position
-    overflowGrid.scrollTo({
-        left: scrollPosition,
-        behavior: 'smooth'
-    });
-}, scrollInterval);
+});
+
+
+//slider-carousel
+//select slides
+const slides = document.querySelectorAll(".slider");
+const slide1 = document.querySelector(".slide1");
+const slide2 = document.querySelector(".slide2");
+const slide3 = document.querySelector(".slide3");
+
+//selecct radio btns
+const radio1 = document.querySelector('.radio1');
+const radio2 = document.querySelector('.radio2');
+const radio3 = document.querySelector('.radio3');
 
 
 
-//make shop link visible when you hover over wrapper
+function resetSlides() {
+    slide1.classList.remove('active-slide');
+    slide2.classList.remove('active-slide');
+    slide3.classList.remove('active-slide');
+}
 
-const shopWrapper = document.querySelectorAll(".shop-item");
+function resetColor() {
+    radio1.classList.remove('active-btn');
+    radio2.classList.remove('active-btn');
+    radio3.classList.remove('active-btn');
+}
 
-shopWrapper.forEach(wrapper => {
-    wrapper.addEventListener("mouseover", ()=> {
-        const shopLinks = document.querySelectorAll(".shop-link");
-        shopLinks.forEach(link => {
-            link.classList.toggle("showLink");        })
-    })
-})
+radio1.addEventListener("click", () => {
+    resetColor();
+    resetSlides();
+    radio1.classList.add('active-btn');
+    slide1.classList.add('active-slide');
+});
+
+radio2.addEventListener("click", () => {
+    resetColor();
+    resetSlides();
+    radio2.classList.add('active-btn');
+    slide2.classList.add('active-slide');
+});
+
+radio3.addEventListener("click", () => {
+    resetColor();
+    resetSlides();
+    radio3.classList.add('active-btn');
+    slide3.classList.add('active-slide');
+});
+
+
