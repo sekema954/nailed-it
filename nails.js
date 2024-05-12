@@ -1,3 +1,17 @@
+
+
+//foward btn
+
+const fowardBtn1 = document.querySelector(".foward-btn1");
+const form1 = document.getElementById("form-1");
+const form2 = document.getElementById("form-2");
+
+fowardBtn1.addEventListener("click", ()=>{
+    form2.classList.add('active-form')
+})
+
+
+
 //menubar
 
 const menuBtn = document.querySelector(".menu-bar");
