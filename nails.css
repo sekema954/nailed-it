@@ -307,6 +307,8 @@
     max-width: 100vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    background-color: aliceblue;
+
 }
 
 
@@ -358,6 +360,8 @@
 }
 
 
+
+/****SERVICES****
 #services{
     max-width: 100vw;
     height: 50vh;
@@ -383,14 +387,15 @@
 .slider-carousel-wrapper{
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    
+    overflow: hidden;   
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #ff7878 74%);
+
 }
+
 
 .service-box{
     width: 340px;
@@ -398,13 +403,12 @@
     display: none;
     justify-content: center;
     align-items: center;
-    border: solid black;
     margin: 2px;
 }
 
 .service-box img{
-    width: 60%;
-    height: 60%;
+    width: 100%;
+    height: 90%;
 }
 
 .service-radio{
@@ -459,3 +463,103 @@
 .active-container{
     display: inline-block !important;
 }
+****/
+
+#team{
+    padding-top: 30px;
+}
+
+.team-title{
+    display: flex;
+    justify-content: center;
+    color: var(--dark-pink);
+    text-align: center;
+}
+
+.team-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+@media(max-width:1057px) {
+    .team-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+
+@media(max-width:681px) {
+    .team-grid{
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+
+
+.team-box{
+    width: 340px;
+    border: solid grey 1px;
+    padding: 20px;
+}
+
+.team-img{
+    width: 100%;
+    height: 260px;
+}
+
+.team-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.team-context-wrapper>div{
+    display: flex;
+    justify-content: center;
+}
+
+
+.team-intro{
+    text-align: center;
+    padding: 0 20px 0 20px;
+}
+
+
+.team-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.team-btn button{
+    width: 160px;
+    height: 45px;
+    background-color: white;
+    border: solid palevioletred;
+    cursor: pointer;
+    transition: all .50s;
+    border-radius: 20px;
+}
+
+.team-btn button:hover{
+    background-color: var(--dark-pink);
+    color: white;
+}
+
