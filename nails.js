@@ -1,5 +1,4 @@
 //testimony
-
 const card1 = document.getElementById('card1');
 const card2 = document.getElementById('card2');
 const card3 = document.getElementById('card3');
@@ -33,6 +32,8 @@ card3.addEventListener('click', ()=>{
     rateWrapper3.classList.add('active-rating'); 
     rateWrapper3.classList.add('slideIn2');
 });
+
+
 
 
 //menubar

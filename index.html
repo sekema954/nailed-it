@@ -39,8 +39,8 @@
             <!---left nav-->
             <div class="left-nav">
                 <li><a href="#home">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
             </div>
             <!---center-nav-->
             <div class="center-nav">
@@ -66,8 +66,8 @@
         <div id="dropdown-menu">
             <div class="dropdown-wrapper">
                 <li><a class="nav-link" href="#home">Home</a></li>
-                <li><a class="nav-link" href="">About</a></li>
-                <li><a class="nav-link" class="nav-link" href="">Services</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link" class="nav-link" href="services.html">Services</a></li>
                 <li><a class="nav-link" href="">Gallery</a></li>
                 <li><a class="nav-link"href="">Pages</a></li>
                 <li><a class="nav-link" href="">Contacts</a></li>
@@ -77,7 +77,7 @@
 
     <!---slides-->
     <!---slide1-->
-    <div class="carousel-container">
+    <div class="carousel-container" id="home">
         <div class="carouselSlider active-slider" id="slider1">
             <img src="images/slide1.jpg" alt="">
             <div class="slider-context-wrapper">
@@ -447,7 +447,7 @@
                     <div class="form-container">
 
                         <!---form1-->
-                        <form action="/submit-appointment" method="POST" class="active-form form-1">
+                        <form action="" method="" class="active-form form-1">
                             <div class="name">
                                 <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
                                 <input type="text" name="last_name" id="last_name" placeholder="Last Name" required>
@@ -469,7 +469,7 @@
                             </div>
             
                             <div class="submit-form">
-                                <button type="submit">Forward
+                                <button type="submit" id="foward-btn1">Forward
                                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                 </button>
                             </div>
@@ -480,7 +480,7 @@
 
 
                         <!---form2-->
-                        <form action="/submit-appointment" method="POST" class="form-2">
+                        <form action="" method="" class="form-2">
                             <div class="address">
                                 <input type="text" name="address" id="address" placeholder="Address" required>
                             </div>
@@ -510,7 +510,7 @@
 
 
                         <!----form3-->
-                        <form action="/submit-appointment" method="POST" class="form-3">
+                        <form action="" method="" class="form-3">
                             <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
             
                             <div class="submit-form">
@@ -557,9 +557,9 @@
             </a></li>
         </ul>
         <ul class="menu">
-          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+          <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="about.html">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="services.html">Services</a></li>
           <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
           <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
     
