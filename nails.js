@@ -1,19 +1,41 @@
+//testimony
+
+const card1 = document.getElementById('card1');
+const card2 = document.getElementById('card2');
+const card3 = document.getElementById('card3');
 
 
-//foward btn
+const rateWrapper1 = document.getElementById('rating1');
+const rateWrapper2 = document.getElementById('rating2');
+const rateWrapper3 = document.getElementById('rating3');
 
-const fowardBtn1 = document.querySelector(".foward-btn1");
-const form1 = document.getElementById("form-1");
-const form2 = document.getElementById("form-2");
+function resetRating(){
+    rateWrapper1.classList.remove('active-rating');
+    rateWrapper2.classList.remove('active-rating');
+    rateWrapper3.classList.remove('active-rating');
+}
 
-fowardBtn1.addEventListener("click", ()=>{
-    form2.classList.add('active-form')
-})
 
+card1.addEventListener('click', ()=>{
+    resetRating();
+    rateWrapper1.classList.add('active-rating'); 
+    rateWrapper1.classList.add('slideIn');
+});
+
+card2.addEventListener('click', ()=>{
+    resetRating();
+    rateWrapper2.classList.add('active-rating'); 
+    rateWrapper2.classList.add('slideIn2');
+});
+
+card3.addEventListener('click', ()=>{
+    resetRating();
+    rateWrapper3.classList.add('active-rating'); 
+    rateWrapper3.classList.add('slideIn2');
+});
 
 
 //menubar
-
 const menuBtn = document.querySelector(".menu-bar");
 const dropdown = document.getElementById("dropdown-menu");
 const navLinks = document.querySelectorAll(".nav-link");
@@ -78,6 +100,7 @@ radio1.addEventListener("click", ()=>{
     resetSlider();
     radio1.classList.add('active-radio');
     slider1.classList.add("active-slider");
+    slider1.classList.add('slideLeft');
 } );
 
 radio2.addEventListener("click", ()=>{
@@ -85,6 +108,7 @@ radio2.addEventListener("click", ()=>{
     resetSlider();
     radio2.classList.add('active-radio');
     slider2.classList.add("active-slider");
+    slider2.classList.add('slideLeft');
 } );
 
 
@@ -93,6 +117,7 @@ radio3.addEventListener("click", ()=>{
     resetSlider();
     radio3.classList.add('active-radio');
     slider3.classList.add("active-slider");
+    slider3.classList.add('slideLeft');
 } );
 
 
@@ -184,3 +209,4 @@ radioBtn4.addEventListener("click", ()=>{
     radioBtn4.classList.add('active-radio');
     wrapper4.classList.add("active-container");
 });
+
