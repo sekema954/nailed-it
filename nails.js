@@ -37,16 +37,18 @@ card3.addEventListener('click', ()=>{
 
 
 //menubar
-const menuBtn = document.querySelector(".menu-bar");
-const dropdown = document.getElementById("dropdown-menu");
-const navLinks = document.querySelectorAll(".nav-link");
-menuBtn.addEventListener("click", ()=>{
-    menuBtn.classList.toggle("change");
-    dropdown.classList.toggle('change-height');
-    navLinks.forEach(link=>{
-        link.classList.toggle('change-display');
-    })
-} )
+    const menuBtn = document.querySelector(".menu-bar");
+    const dropdown = document.getElementById("dropdown-menu");
+    const navLinks = document.querySelectorAll(".nav-link");
+    menuBtn.addEventListener("click", ()=>{
+        menuBtn.classList.toggle("change");
+        dropdown.classList.toggle('change-height');
+        navLinks.forEach(link=>{
+            link.classList.toggle('change-display');
+        })
+    } );
+
+
 
 
 //navbar shadow on scrollY
