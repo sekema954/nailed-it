@@ -1,3 +1,15 @@
+//menubar
+const menuBtn = document.querySelector(".menu-bar");
+const dropdown = document.getElementById("dropdown-menu");
+const navLinks = document.querySelectorAll(".nav-link");
+menuBtn.addEventListener("click", ()=>{
+    menuBtn.classList.toggle("change");
+    dropdown.classList.toggle('change-height');
+    navLinks.forEach(link=>{
+        link.classList.toggle('change-display');
+    })
+} );
+
 //testimony
 const card1 = document.getElementById('card1');
 const card2 = document.getElementById('card2');
@@ -32,22 +44,6 @@ card3.addEventListener('click', ()=>{
     rateWrapper3.classList.add('active-rating'); 
     rateWrapper3.classList.add('slideIn2');
 });
-
-
-
-
-//menubar
-    const menuBtn = document.querySelector(".menu-bar");
-    const dropdown = document.getElementById("dropdown-menu");
-    const navLinks = document.querySelectorAll(".nav-link");
-    menuBtn.addEventListener("click", ()=>{
-        menuBtn.classList.toggle("change");
-        dropdown.classList.toggle('change-height');
-        navLinks.forEach(link=>{
-            link.classList.toggle('change-display');
-        })
-    } );
-
 
 
 
