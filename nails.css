@@ -14,6 +14,12 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+
+}
+
 /****header***/
 .top-header{
     width: 100%;
@@ -705,149 +711,9 @@
 .active-rating{
     display: inline-block !important;
 }
-/***contact***
-
-#contact{
-    width: 100%;
-    background:linear-gradient(aliceblue, pink);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-box{
-    background-color: white;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-@media(max-width:1042px){
-    .contact-box{
-        background-color: white;
-        display: grid;
-        grid-template-columns:1fr;
-        grid-template-rows: repeat(2, 1fr);
-    }
-}
 
 
-.contact-icon{
-    width: 100%;
-    height: 100%;
-}
-
-.contact-icon img{
-    width: 100%;
-    height: 100%;
-}
-
-.contact-title{
-    display: flex;
-    justify-content: center;
-    color: var(--dark-pink);
-}
-
-
-.loading{
-    display: flex;
-    justify-content:center;
-}
-
-.circle{
-    width: 15px;
-    height: 15px;
-    border-radius: 50px;
-    border: solid black;
-    margin: 40px;
-}
-
-.circle .line{
-    width: 58px;
-    height: 3px;
-    background-color: var(--dark-pink);
-    margin-left: 23px;
-    margin-top: 6px;
-}
-
-.circle1{
-    background-color: #E4405F;
-}
-
-.form-sub{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.input-box{
-    display: flex;
-    justify-content: center;
-    margin: 25px;
-    gap: 20px;
-}
-
-.input-box input{
-    border: none;
-    border-bottom: solid grey !important;
-    padding-left:10px;
-}
-
-.dir-btn{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.dir-btn span{
-    padding: 10px;
-}
-
-
-.dir-btn button{
-    width: 200px;
-    height: 45px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all .50s;
-}
-
-
-.dir-btn button:hover{
-    background-color: var(--dark-pink);
-    color: white;
-}
-
-
-.address-input input{
-    width: 400px;
-}
-
-.text-area{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.text-area textarea{
-    padding: 20px;
-}
-
-
-.active-form{
-    display: inline-block !important;
-}
-
-.contact-form{
-    display: none;
-}
-
-****/
-
-
-/****contact us***/
+/****Book appointment***/
 
 #contact {
     max-width: 100vw;
